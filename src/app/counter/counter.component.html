@@ -1,0 +1,23 @@
+
+
+<h4>Contador: {{ contador }}</h4>
+
+<h4>Contador Señal: {{ contadorSignal() }}</h4>
+
+<h3>{{ mensaje() }}</h3>
+
+<br>
+
+<button class="btn btn-primary" 
+    (click)="incrementar(+1)">+1
+</button>
+
+<button class="btn btn-primary mx-3" 
+    (click)="incrementar(-1)">-1
+</button>
+
+<!-- botón de reset.  -->
+<button class="btn btn-primary mx-3" 
+    (click)="reset()">Reset
+</button>
+
