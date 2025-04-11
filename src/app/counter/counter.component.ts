@@ -13,10 +13,13 @@ export class CounterComponent {
   public contador = 10;
 
   contadorSignal = signal(10);
+  edad = signal(25);
 
   // señales computadas
   mensaje = computed( () => {
 
+    // SE actualizan siempre que en el cuerpo de la funcion aparezca alguna señal implicada
+    
     return `Hola ya tienes ${this.contadorSignal()} valores`;
   })
 
